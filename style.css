@@ -71,29 +71,44 @@ body {
     background-size: cover;
   }
 
+  #light {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
   .dark-theme .card-front {
-    background-color: #333;
+    background-color: #333 !important;
   }
   
   .dark-theme .btn {
-    background-color: #222;
-    color: #fff;
-  }
-  
-  .dark-theme .btn-primary {
-    background-color: #0069d9;
+    background-color: #222 !important;
+    color: #fff!important;
+    border-color: #1d2124 !important;
+    box-shadow: 0 0 0 .2rem rgba(82,88,93,.5) !important;
   }
   
   .dark-theme .btn-light {
     background-color: #fff;
     color: #222;
   }
+
+  .btn {
+  background-color: #fff !important;
+  color: #222!important;
+  border-color: #dae0e5 !important;
+  box-shadow: 0 0 0 .2rem rgba(216,217,219,.5)!important;
+  }
+
+  #difficulty * {
+    margin: 4px;
+  }
   
+  #dark {
+    background-color: #222 !important;
+    color: #fff !important;
+  }
+
   .dark-theme .btn-warning {
     background-color: #ffcc00;
     color: #000;
-  }
-  
-  button {
-    margin: 5px;
   }
