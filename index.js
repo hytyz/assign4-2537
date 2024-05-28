@@ -8,14 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
   let timer = 0;
   let timeElapsed = 0;
 
-  // fetches a random Pokémon image from the PokéAPI using the Pokémon ID and returns the image URL
   async function fetchPokemonImage(id) {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     const data = await response.json();
     return data.sprites.front_default;
   }
 
-  // Fetches a random Pokémon image from the PokéAPI using the Pokémon ID and returns the image URL
   async function getRandomPokemonIds(count) {
     const maxPokemonId = 898; // As of now, there are 898 Pokémon
     const randomIds = new Set();
@@ -26,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
     return Array.from(randomIds);
   }
 
-  // creates a card element with a Pokémon image
   async function createCard(id) {
     const img = await fetchPokemonImage(id);
     const card = document.createElement('div');
